@@ -12,4 +12,4 @@ trainer.train("chatterbot.corpus.english")
 while(True):
 	user_input = input(': ')
 	# Get a response to an input statement
-	chatbot.get_response(user_input)
+	print(chatbot.get_response(user_input))
