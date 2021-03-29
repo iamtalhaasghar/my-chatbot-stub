@@ -9,8 +9,8 @@ File `C:\Users\USER\AppData\Local\Programs\Python\Python37\lib\site-packages\cha
 That is,<br>
     Open the `C:\Users\USER\AppData\Local\Programs\Python\Python37\lib\site-packages\chatterbot\tagging.py` file
     Go to Line 13<br>
-    `Replace self.nlp = spacy.load(self.language.ISO_639_1.lower())` with<br>
-`if self.language.ISO_639_1.lower() == 'en':<br>
+    Replace `self.nlp = spacy.load(self.language.ISO_639_1.lower())` with<br>
+`if self.language.ISO_639_1.lower() == 'en':
     self.nlp = spacy.load('en_core_web_sm')<br>
 else:<br>
     self.nlp = spacy.load(self.language.ISO_639_1.lower())`<br>
