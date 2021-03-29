@@ -18,4 +18,4 @@ else:
     
 You will need to add more conditions for other languages you need to support
 
-4. `python bot.py`
+4. After that run using `python bot.py`.
