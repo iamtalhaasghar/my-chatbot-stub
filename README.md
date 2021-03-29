@@ -6,19 +6,17 @@
 
 Next, fix this error:
 
-File "C:\Users\USER\AppData\Local\Programs\Python\Python37\lib\site-packages\chatterbot\tagging.py", line 13, in __init__
-    self.nlp = spacy.load(self.language.ISO_639_1.lower())
-
+File `C:\Users\USER\AppData\Local\Programs\Python\Python37\lib\site-packages\chatterbot\tagging.py`, line 13, in __init__
+    `self.nlp = spacy.load(self.language.ISO_639_1.lower())`
 That is,
-
-    Open the C:\Users\USER\AppData\Local\Programs\Python\Python37\lib\site-packages\chatterbot\tagging.py file
+    Open the `C:\Users\USER\AppData\Local\Programs\Python\Python37\lib\site-packages\chatterbot\tagging.py` file
     Go to Line 13
-    Replace self.nlp = spacy.load(self.language.ISO_639_1.lower()) with
+    `Replace self.nlp = spacy.load(self.language.ISO_639_1.lower())` with
 
-```if self.language.ISO_639_1.lower() == 'en':
+`if self.language.ISO_639_1.lower() == 'en':
     self.nlp = spacy.load('en_core_web_sm')
 else:
-    self.nlp = spacy.load(self.language.ISO_639_1.lower())```
+    self.nlp = spacy.load(self.language.ISO_639_1.lower())`
 
 You will need to add more conditions for other languages you need to support
 
