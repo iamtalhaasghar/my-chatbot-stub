@@ -17,4 +17,5 @@ else:
     self.nlp = spacy.load(self.language.ISO_639_1.lower())</pre>
     
 You will need to add more conditions for other languages you need to support
+
 4. `python bot.py`
